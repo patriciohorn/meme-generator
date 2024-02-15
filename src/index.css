@@ -1,0 +1,65 @@
+:root {
+  --font-family: 'Karla', sans-serif;
+  --font-weight-light: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --color-primary: #672280;
+  --color-secondary: #a626d3;
+  --color-text: rgba(55, 65, 81, 1);
+  --color-gray-500: rgba(107, 114, 128, 1);
+  --color-background: white;
+  --fs-base: 1rem;
+  --line-height: 1.5;
+}
+
+*/ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  /* line-height: calc(1em + 0.725rem); check later */
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body,
+input,
+button,
+select,
+option {
+  font-weight: var(--font-weight-light);
+  font-family: var(--font-family);
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background: var(--color-background);
+  font-size: var(--fs-base);
+  line-height: var(--line-height);
+}

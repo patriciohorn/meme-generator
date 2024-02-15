@@ -1,0 +1,71 @@
+main {
+  padding-block: 48px;
+}
+
+.container {
+  --padding: 1.25rem * 2;
+  --max-width: 38rem;
+  width: min(100% - var(--padding), var(--max-width));
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+
+  color: white;
+  padding: 20px;
+}
+
+.header--image {
+  height: 26px;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-weight: 500;
+}
+
+.form {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 32px;
+}
+
+.form--field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form--label {
+  font-weight: 500;
+}
+
+.form--input {
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  text-indent: 6px;
+  height: 36px;
+}
+
+.form--button {
+  grid-column: 1 / -1;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+  height: 48px;
+}
